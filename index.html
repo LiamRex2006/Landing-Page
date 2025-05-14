@@ -1,50 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="./img/media/ico/logo.ico" />
-        
-        <title>Who Wants to Be a Millionaire?</title>
-        
-        <!-- External CSS -->
-        <link rel="stylesheet" href="./css/styles.css" />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-            <img src="./img/media/png/unnamed.png" alt="Millionaire Show Logo" class="logo" />
-            <h1>Who Wants to Be a Millionaire?</h1>
-            <p class="subtitle">Get ready for the most thrilling quiz show!</p>
-            </header>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Tienda FNAF Merch</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="file:///C:/Users/USUARIO/OneDrive/Documentos/Programas%20Sena/Construci%C3%B3n%20del%20software/Guia%202-%20Landing%20Page%20con%20bootstrap/img/media/ico/fazbear-logo.ico">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FNAF Merch</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <section class="details">
-            <p>
-                Join us for an evening packed with excitement, trivia, and the chance to win big. How far will you go for the million?
-            </p>
-            <ul>
-                <li>📍 Venue: Central Theater</li>
-                <li>📅 Date: Saturday, July 20</li>
-                <li>🕗 Time: 8:00 PM</li>
-            </ul>
-            </section>
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-4">Bienvenido a FNAF Merch Store</h1>
+      <p class="lead">Encuentra tu merch oficial de Five Nights at Freddy's</p>
+    </div>
+  </section>
 
-            <section class="cta">
-                <a href="./pages/register.html" class="button">I Want to Participate!</a>
-            </section>
-
-            <footer>
-            <p>&copy; 2025 Millionaire Show – All rights reserved</p>
-            </footer>
+  <!-- Productos -->
+  <section id="productos" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Nuestros Productos</h2>
+      <div class="row gy-4">
+        <!-- Producto 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="C:\Users\USUARIO\OneDrive\Documentos\Programas Sena\Construción del software\Guia 2- Landing Page con bootstrap\img\media\png\chica-peluche.png" class="img-fluid d-block mx-auto mb-3" alt="Camiseta de Mangle" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Peluche de Chica</h5>
+              <p class="card-text">Suave peluche oficial de Chica.</p>
+              <div class="mt-auto">
+                <p class="fw-bold">$29.99</p>
+                <a href="pages/productos/producto1.html" class="btn btn-buy w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <aside class="gif-sidebar gif-left">
-            <img src="./img/media/gif/dinero.gif" alt="Dinero GIF" class="gif-overlay" />
-        </aside>
+        <!-- Producto 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="C:\Users\USUARIO\OneDrive\Documentos\Programas Sena\Construción del software\Guia 2- Landing Page con bootstrap\img\media\png\freddy-camiseta.png" class="img-fluid d-block mx-auto mb-3" alt="Camiseta de Mangle" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Camiseta de Freddy</h5>
+              <p class="card-text">Camiseta premium con estampado de Freddy Fazbear.</p>
+              <div class="mt-auto">
+                <p class="fw-bold">$24.99</p>
+                <a href="pages/productos/producto2.html" class="btn btn-buy w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="C:\Users\USUARIO\OneDrive\Documentos\Programas Sena\Construción del software\Guia 2- Landing Page con bootstrap\img\media\png\foxy-peluche.png" class="img-fluid d-block mx-auto mb-3" alt="Camiseta de Mangle" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Peluche de Foxy</h5>
+              <p class="card-text">Suave peluche oficial de Foxy.</p>
+              <div class="mt-auto">
+                <p class="fw-bold">$39.99</p>
+                <a href="pages/productos/producto3.html" class="btn btn-buy w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="C:\Users\USUARIO\OneDrive\Documentos\Programas Sena\Construción del software\Guia 2- Landing Page con bootstrap\img\media\png\figura-golden-fredy2.png" class="img-fluid d-block mx-auto mb-3" alt="Camiseta de Mangle" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Figura de Golden Freddy</h5>
+              <p class="card-text">Figura de acción coleccionable de Golden Freddy con detalles realistas.</p>
+              <div class="mt-auto">
+                <p class="fw-bold">$29.99</p>
+                <a href="pages/productos/producto4.html" class="btn btn-buy w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 5 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="C:\Users\USUARIO\OneDrive\Documentos\Programas Sena\Construción del software\Guia 2- Landing Page con bootstrap\img\media\png\figura-bonnie.png" class="img-fluid d-block mx-auto mb-3" alt="Camiseta de Mangle" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Figura de Bonnie</h5>
+              <p class="card-text">Figura articulada de Bonnie, perfecta para fans de Five Nights at Freddy’s.</p>
+              <div class="mt-auto">
+                <p class="fw-bold">$27.99</p>
+                <a href="pages/productos/producto5.html" class="btn btn-buy w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 6 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="C:\Users\USUARIO\OneDrive\Documentos\Programas Sena\Construción del software\Guia 2- Landing Page con bootstrap\img\media\png\camiseta-mangle2.png" class="img-fluid d-block mx-auto mb-3" alt="Camiseta de Mangle" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Camiseta de Mangle</h5>
+              <p class="card-text">Camiseta de alta calidad con diseño exclusivo de Mangle, ideal para fans de FNAF.</p>
+              <div class="mt-auto">
+                <p class="fw-bold">$23.99</p>
+                <a href="pages/productos/producto6.html" class="btn btn-buy w-100">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <aside class="gif-sidebar gif-right">
-            <img src="./img/media/gif/dinero.gif" alt="Dinero GIF" class="gif-overlay" />
-        </aside>
-    </body>
+  <!-- Footer -->
+  <footer class="footer text-light bg-dark py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 FNAF Merch Store. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS y personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
 </html>
